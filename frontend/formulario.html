@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Película</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <form class="card formulario">
+        <!-- Tu formulario existente -->
+<input type="hidden" name="id">
+<label for="title">Título </label>
+<p><input type="text" name="title" id="title" required></p>
+<label for="rating">Calificación </label>
+<p><input type="number" name="rating" id="rating"></p>
+<label for="awards">Premios </label>
+<p><input type="number" name="awards" id="awards" ></p>
+<label for="release_date">Fecha de creación </label>
+<p><input type="date" name="release_date" id="release_date" required></p>
+<label for="length">Duración </label>
+<p><input type="number" name="length" id="length" required></p>
+<!-- Botones y demás elementos -->
+
+        
+        
+        <br>
+        <div class="action">
+            <button class="botonAgregar" id="editButton">Editar</button>
+            <button class="botonAgregar" id="createButton">Crear</button>
+            <button class="botonBorrar" id="deleteButton">Eliminar</button>
+
+        </div>
+        <a href="home.html" class="volverButton">Volver al Home</a>
+    </form>
+    <script src="js/formulario.js"></script>
+</body>
+</html>
